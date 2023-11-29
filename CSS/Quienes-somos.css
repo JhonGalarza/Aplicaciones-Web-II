@@ -1,0 +1,188 @@
+body{
+    background-color:white
+}
+
+/* A partir de aqui en el nav*/
+
+.nav_ul-responsive{
+    display: none;
+}
+
+.nav{
+    background-color: violet ;
+    border: solid 1px white;
+    box-sizing: border-box;
+    
+}
+
+
+.nav_ul-li{
+    display: inline-block;
+    padding: 10px;
+    color: wheat;
+    box-sizing: border-box;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+
+.nav_ul-li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.nav_ul-li i{
+ text-align: center;
+ padding-right: 5px;
+}
+
+.nav_ul-li:hover > a{
+    color: white;
+}
+.nav_ul-li:hover > i{
+    color: white;
+}
+.nav_ul-li:hover {
+   background-color: black;
+   border-radius: 10px;
+   transition: all 1s;
+   outline: solid 1px purple;
+
+}
+
+/*A partir de aqui es el nav responsive*/
+
+@media only screen and (max-width: 500px){
+
+    .nav_ul{
+    display: none;
+}
+
+.nav_ul-responsive{
+    display: block;
+    
+    background-color: antiquewhite;
+}
+
+.nav{
+   background-color: aqua ; 
+   height: 40px;
+}
+
+.nav_button-container-responsive{
+    width: 100%;
+    font-size: 20px;
+    text-align: right;
+    background-color: blueviolet;
+    position: relative;
+    z-index: 100;
+}
+
+.nav-button-responsive{
+    padding: 10px;
+}
+
+.nal-li-container-responsive{
+background-color: rebeccapurple ;
+width: 80%;
+position: absolute;
+top: -1000px;
+z-index: 1;
+transition: all 1s;
+
+}
+
+.nav_ul-li-respnsive{
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav_ul-li-respnsive a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav_ul-responsive:hover > .nal-li-container-responsive{
+top: 40px;
+transition: all 1s;
+}
+
+.nav_ul-li-respnsive:hover{
+    background-color:rgba(85, 27, 139, 0.699);
+    color: black;
+    transition: .5s;
+}
+
+.nav_ul-li-respnsive:hover a{
+    color: black;
+    transition: .5s;
+}
+
+
+}
+
+/* A partir de aqui es el  inicio de sesion */
+
+.conteiner_form{
+    background-color: violet;
+    text-align: center;
+    width: 300px;
+    height: 330px;
+    margin:  50px auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    
+}
+
+.container_form-h2{
+padding: 10px;
+text-decoration: underline overline black; 
+}
+
+.form{
+    display:;
+    margin:  ;
+}
+
+.form-group-container{
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+input[type="text"],
+input[type="password"]{
+    padding: 3px;
+    margin: 40px;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+}
+
+input[type="submit"]{
+    margin-top: 40px;
+    padding: 10px;
+    background-color: rgb(155, 43, 155);
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover{
+    background-color: black;
+    color: white;
+    transition: all 1s;
+}
+
+input[type="password"]::placeholder,
+input[type="text"]::placeholder {
+    color:black ;
+    font-size: 12px;
+}
+
+input[type="password"]:focus,
+input[type="text"]:focus{
+    background-color: black;
+    color: white;
+    
+}

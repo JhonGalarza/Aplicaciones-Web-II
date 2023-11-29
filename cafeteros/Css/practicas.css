@@ -1,0 +1,256 @@
+body{
+    overflow-x: hidden;
+    background-color: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar {
+	width: 10px;
+	background: rgba(203, 209, 209, 0.377);
+}
+
+body::-webkit-scrollbar-thumb {
+	background: rgba(255,255,255, .2);
+	border-radius:10 px;
+	border-right: 2px solid black;
+}
+
+.nav{
+    position: relative;
+    width: 100vw;
+    display:flex;
+    flex-direction: row;
+    backdrop-filter: blur(10px);
+    height: 50px;
+    padding: 10px;
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    border-bottom: solid 2px rgba(203, 209, 209, 0.692);
+}
+
+
+
+.logo{
+margin: auto 10px;
+flex-grow: 1;
+color: rgb(255, 255, 255);
+
+
+}
+
+.logo a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.li-general{
+    display: inline-block;
+    margin: auto 15px;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+.li-general a{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    text-decoration: none;
+    
+}
+
+.li-general:hover{
+    background-color: rgba(203, 209, 209, 0.377);
+    transition: background 0.5s;
+}
+
+
+
+/*Aqui comienza el edit del section*/
+
+.container-img{
+    position: absolute;
+    background-image: url(../Imagenes/istockphoto-1366188263-1024x1024.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment:fixed;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+
+.filter{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    opacity: 0.32;
+    z-index: 1;
+
+}
+
+
+.texto-principal{
+    position: relative;
+    z-index: 10;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    
+  
+}
+
+.container-h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 20%;
+    text-align: center;
+    
+}
+
+
+.texto-principal h1{
+    font-size: 60px;
+    
+}
+
+.bajar{
+    position: absolute;
+    border-radius: 100%;
+    z-index: 15;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+.bajar button{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    scroll-behavior: smooth;
+}
+
+.bajar button:hover{
+    cursor: pointer;
+    background-color: rgba(203, 209, 209, 0.377);
+}
+
+*{
+    scroll-behavior: smooth;
+}
+/*Aqui comienza el edit del aside*/
+
+.division{
+    width:100vw ;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.863);
+    margin-bottom: 10px;
+}
+
+.container-master{
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+}
+
+/*Aqui se edita el flex de cosecha*/
+
+.container-div-cosecha{
+    text-align: center;
+    width: 500px;
+    height: auto;
+    padding: 10px;
+}
+
+.container-img-cosecha{
+  height: 300px;
+  border-radius: 10px;
+}
+
+.container-img-cosecha img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.title-h2-cose{
+    margin: 20px 0px 30px 0px;
+    font-size: 18px;
+}
+
+.parrafo-cose{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.buton-cose button{
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 30px;
+
+}
+
+.buton-cose button:hover{
+    cursor: pointer;
+    background-color:rgba(203, 209, 209, 0.377) ;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+}
+
+/*Aqui se edita el flex de postcosecha*/
+
+.container-div-postcosecha{
+    text-align: center;
+    width: 600px;
+    height: auto;
+    padding: 10px;
+  
+}
+
+.container-img-post{
+    height: 300px;
+    border-radius: 10px;
+}
+
+.container-img-post img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.title-h2-post{
+    margin: 20px 0px 30px 0px;
+    font-size: 18px;
+}
+
+.parrafo-post{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.buton-post button{
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.buton-post button:hover{
+    cursor: pointer;
+    background-color:rgba(203, 209, 209, 0.377) ;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+
+}

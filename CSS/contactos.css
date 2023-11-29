@@ -1,0 +1,81 @@
+body{
+background-color: black;
+}
+
+.form_container{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #333;
+margin: 50px 50px;
+flex-wrap: wrap;
+
+
+
+.form{
+   padding: 30px;
+   text-align: center;
+   flex: 1;
+   min-width: 400px;
+}
+
+.container_input{
+    padding: 6px;
+}
+
+.form_input{
+    width: 90%;
+    padding: 6px;
+}
+
+.container_img{
+    margin: 10px;
+    flex: 1;
+    display: flex;
+    background-color: aliceblue;
+    border-radius: 100%;
+    padding: 20px 0px;
+    max-width: 250px;
+}
+
+
+.container_img img{
+    max-width: 200px;
+    margin: auto;
+    
+}
+
+/* A partir de aqui comienza la personalizacion*/
+
+.form textarea{
+    resize: none;
+}
+
+.form_input{
+    border: none;
+    border-bottom: solid 2px aqua;
+    background-color: rgb(94, 94, 94) ;
+    color: white;
+}
+
+.form_input:focus{
+    outline: none;
+}
+
+.form_input:focus{
+    background: linear-gradient(to bottom , transparent, rgba(51, 141, 129, 0.514));
+}
+
+input[type="submit"]:hover{
+    background-color: rgba(0, 255, 255, 0.308);
+    border-radius: 10px;
+}
+
+.form_input::placeholder{
+    
+    color: white;
+}
+
+.form_container{
+    border: solid 1px aqua;
+}
